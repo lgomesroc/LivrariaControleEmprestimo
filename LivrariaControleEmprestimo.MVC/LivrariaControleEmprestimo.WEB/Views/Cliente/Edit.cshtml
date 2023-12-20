@@ -1,0 +1,103 @@
+﻿@model LivrariaControleEmprestimo.DATA.Models.Cliente
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Alterar dados do cliente</h1>
+
+<h4>Altere os dados abaixo</h4>
+<hr />
+<div>
+    <a class="btn btn-primary" asp-action="Index"> <i class="fa fa-arrow-alt-circle-left"></i> Voltar</a>
+</div>
+<br />
+<div class="row">
+    <div class="col-md">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div hidden class="form-group col-md">
+                <label asp-for="id" class="control-label"></label>
+                <input asp-for="id" class="form-control" />
+            </div>
+
+            <div class="card">
+                <div class="card-header">Informações pessoais</div>
+                <div class="card-body row">
+                    <div class="form-group col-md">
+                        <label asp-for="cliCPF" class="control-label"></label>
+                        <input asp-for="cliCPF" class="form-control" />
+                        <span asp-validation-for="cliCPF" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md">
+                        <label asp-for="cliNome" class="control-label"></label>
+                        <input asp-for="cliNome" class="form-control" />
+                        <span asp-validation-for="cliNome" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">Endereço</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="form-group col-md">
+                            <label asp-for="cliEndereco" class="control-label"></label>
+                            <input asp-for="cliEndereco" class="form-control" />
+                            <span asp-validation-for="cliEndereco" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md">
+                            <label asp-for="cliCidade" class="control-label"></label>
+                            <input asp-for="cliCidade" class="form-control" />
+                            <span asp-validation-for="cliCidade" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md">
+                            <label asp-for="cliBairro" class="control-label"></label>
+                            <input asp-for="cliBairro" class="form-control" />
+                            <span asp-validation-for="cliBairro" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md">
+                            <label asp-for="cliNumero" class="control-label"></label>
+                            <input asp-for="cliNumero" class="form-control" />
+                            <span asp-validation-for="cliNumero" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">Contato</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="form-group col-md">
+                            <label asp-for="cliTelefoneCelular" class="control-label"></label>
+                            <input asp-for="cliTelefoneCelular" class="form-control" />
+                            <span asp-validation-for="cliTelefoneCelular" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md">
+                            <label asp-for="cliTelefoneFixo" class="control-label"></label>
+                            <input asp-for="cliTelefoneFixo" class="form-control" />
+                            <span asp-validation-for="cliTelefoneFixo" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Alterar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
