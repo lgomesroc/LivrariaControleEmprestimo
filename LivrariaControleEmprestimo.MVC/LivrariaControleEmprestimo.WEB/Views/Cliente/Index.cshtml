@@ -14,16 +14,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.cliCPF)
+                @Html.DisplayNameFor(model => model.CliCpf)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.cliNome)
+                @Html.DisplayNameFor(model => model.CliNome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.cliTelefoneCelular)
+                @Html.DisplayNameFor(model => model.CliTelefoneCelular)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.cliTelefoneFixo)
+                @Html.DisplayNameFor(model => model.CliTelefoneFixo)
             </th>
             <th></th>
         </tr>
@@ -33,29 +33,29 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.cliCPF)
+                    @Html.DisplayFor(modelItem => item.CliCpf)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.cliNome)
+                    @Html.DisplayFor(modelItem => item.CliNome)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.cliTelefoneCelular)
+                    @Html.DisplayFor(modelItem => item.CliTelefoneCelular)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.cliTelefoneFixo)
+                    @Html.DisplayFor(modelItem => item.CliTelefoneFixo)
                 </td>
                 <td class="row">
-                    <a asp-action="Edit" class="btn btn-primary mr-1" asp-route-id="@item.id"><i class="fa fa-edit"></i></a>
-                    <a asp-action="Details" class="btn btn-success mr-1" asp-route-id="@item.id"><i class="fa fa-search"></i></a>
+                    <a asp-action="Edit" class="btn btn-primary mr-1" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                    <a asp-action="Details" class="btn btn-success mr-1" asp-route-id="@item.Id"><i class="fa fa-search"></i></a>
 
 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-danger mr-1" data-toggle="modal" data-target="#DeleteModal-@item.id">
+                    <button type="button" class="btn btn-danger mr-1" data-toggle="modal" data-target="#DeleteModal-@item.Id">
                         <i class="fa fa-trash"></i>
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="DeleteModal-@item.id" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="DeleteModal-@item.Id" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -65,11 +65,11 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Deseja realmente excluir o cliente @item.cliNome ?
+                                    Deseja realmente excluir o cliente @item.CliNome ?
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-                                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.id">Sim</a>
+                                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Sim</a>
                                 </div>
                             </div>
                         </div>

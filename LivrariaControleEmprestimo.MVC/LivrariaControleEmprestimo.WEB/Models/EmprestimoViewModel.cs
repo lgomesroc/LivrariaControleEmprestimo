@@ -1,8 +1,8 @@
-﻿using System;
+﻿using LivrariaControleEmprestimo.DATA.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static LivrariaControleEmprestimo.DATA.Models.Livro_Cliente_Emprestimo;
 
 namespace LivrariaControleEmprestimo.WEB.Models
 {

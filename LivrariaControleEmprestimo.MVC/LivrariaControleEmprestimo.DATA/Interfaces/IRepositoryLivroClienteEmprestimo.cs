@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LivrariaControleEmprestimo.DATA.Interfaces
 {
-    internal interface IRepositoryLivroClienteEmprestimo : IRepositoryModel<Livro_Cliente_Emprestimo>
+    internal interface IRepositoryLivroClienteEmprestimo : IRepositoryModel<LivroClienteEmprestimo>
     {
 
     }

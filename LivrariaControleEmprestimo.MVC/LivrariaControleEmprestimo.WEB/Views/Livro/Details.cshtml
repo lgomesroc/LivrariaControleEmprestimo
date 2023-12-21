@@ -4,7 +4,7 @@
     <h4>Detalhes do livro</h4>
     <hr />
     <div>
-        <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model.id"> <i class="fa fa-edit"></i> Alterar</a>
+        <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model.Id"> <i class="fa fa-edit"></i> Alterar</a>
         <a class="btn btn-primary" asp-action="Index"> <i class="fa fa-arrow-alt-circle-left"></i> Voltar</a>
     </div>
     <br />
@@ -14,38 +14,38 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="row">
                 <div class="form-group col-md">
-                    <label asp-for="livroNome" class="control-label"></label>
-                    <input readonly="readonly" asp-for="livroNome" class="form-control" />
-                    <span asp-validation-for="livroNome" class="text-danger"></span>
+                    <label asp-for="LivroNome" class="control-label"></label>
+                    <input readonly="readonly" asp-for="LivroNome" class="form-control" />
+                    <span asp-validation-for="LivroNome" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md">
-                    <label asp-for="livroAutor" class="control-label"></label>
-                    <input readonly="readonly" asp-for="livroAutor" class="form-control" />
-                    <span asp-validation-for="livroAutor" class="text-danger"></span>
+                    <label asp-for="LivroAutor" class="control-label"></label>
+                    <input readonly="readonly" asp-for="LivroAutor" class="form-control" />
+                    <span asp-validation-for="LivroAutor" class="text-danger"></span>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-md">
-                    <label asp-for="livroEditora" class="control-label"></label>
-                    <input readonly="readonly" asp-for="livroEditora" class="form-control" />
-                    <span asp-validation-for="livroEditora" class="text-danger"></span>
+                    <label asp-for="LivroEditora" class="control-label"></label>
+                    <input readonly="readonly" asp-for="LivroEditora" class="form-control" />
+                    <span asp-validation-for="LivroEditora" class="text-danger"></span>
                 </div>
                 <div hidden class="form-group col-md">
-                    <label asp-for="livroAnoPublicacao" class="control-label"></label>
-                    <input readonly="readonly" id="anoPublicacaoAsp" asp-for="livroAnoPublicacao" class="form-control" />
-                    <span asp-validation-for="livroAnoPublicacao" class="text-danger"></span>
+                    <label asp-for="LivroAnoPublicacao" class="control-label"></label>
+                    <input readonly="readonly" id="anoPublicacaoAsp" asp-for="LivroAnoPublicacao" class="form-control" />
+                    <span asp-validation-for="LivroAnoPublicacao" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-6">
                     <label class="control-label">Ano de publicação</label>
                     <input id="anoPublicacao" readonly="readonly" value="@ViewBag.anoPublicacao" class="form-control" />
-                    <span asp-validation-for="livroAnoPublicacao" class="text-danger"></span>
+                    <span asp-validation-for="LivroAnoPublicacao" class="text-danger"></span>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label asp-for="livroEdicao" class="control-label"></label>
-                    <input readonly="readonly" asp-for="livroEdicao" class="form-control" />
-                    <span asp-validation-for="livroEdicao" class="text-danger"></span>
+                    <label asp-for="LivroEdicao" class="control-label"></label>
+                    <input readonly="readonly" asp-for="LivroEdicao" class="form-control" />
+                    <span asp-validation-for="LivroEdicao" class="text-danger"></span>
                 </div>
             </div>
         </div>

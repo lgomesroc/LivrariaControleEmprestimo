@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LivrariaControleEmprestimo.DATA.Repositories
 {
-    public class RepositoryLivroClienteEmprestimo :  RepositoryBase<Livro_Cliente_Emprestimo>, IRepositoryLivroClienteEmprestimo
+    public class RepositoryLivroClienteEmprestimo :  RepositoryBase<LivroClienteEmprestimo>, IRepositoryLivroClienteEmprestimo
     {
         public RepositoryLivroClienteEmprestimo(bool Savechanges = true) : base(Savechanges)
         {

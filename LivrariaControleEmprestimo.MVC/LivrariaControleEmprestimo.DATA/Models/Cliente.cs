@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
-using static LivrariaControleEmprestimo.DATA.Models.Livro_Cliente_Emprestimo;
+using static LivrariaControleEmprestimo.DATA.Models.LivroClienteEmprestimo;
 
 #nullable disable
 

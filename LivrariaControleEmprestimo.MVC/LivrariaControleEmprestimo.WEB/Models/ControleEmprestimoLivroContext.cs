@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
@@ -105,3 +105,4 @@ public partial class ControleEmprestimoLivroContext : DbContext
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
+*/

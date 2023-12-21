@@ -12,7 +12,7 @@ namespace LivrariaControleEmprestimo.DATA.Models
 {
     
     [Table("Livro_Cliente_Emprestimo")]
-    public partial class Livro_Cliente_Emprestimo
+    public partial class LivroClienteEmprestimo
     {
         [Key]
         [Column("id")]

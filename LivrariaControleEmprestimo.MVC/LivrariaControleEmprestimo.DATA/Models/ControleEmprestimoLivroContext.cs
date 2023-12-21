@@ -6,7 +6,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
-using static LivrariaControleEmprestimo.DATA.Models.Livro_Cliente_Emprestimo;
+using static LivrariaControleEmprestimo.DATA.Models.LivroClienteEmprestimo;
 
 
 #nullable disable
@@ -26,7 +26,7 @@ namespace LivrariaControleEmprestimo.DATA.Models
 
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Livro> Livro { get; set; }
-        public virtual DbSet<Livro_Cliente_Emprestimo> LivroClienteEmprestimo { get; set; }
+        public virtual DbSet<LivroClienteEmprestimo> LivroClienteEmprestimo { get; set; }
         public virtual DbSet<VwLivroClienteEmprestimo> VwLivroClienteEmprestimo { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

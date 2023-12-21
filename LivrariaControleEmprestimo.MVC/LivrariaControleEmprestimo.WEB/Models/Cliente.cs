@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 
 namespace LivrariaControleEmprestimo.WEB.Models;
@@ -25,3 +25,4 @@ public partial class Cliente
 
     public virtual Livro_Cliente_Emprestimo Livro_Cliente_Emprestimo { get; set; }
 }
+*/

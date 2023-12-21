@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\Cliente.cs" />
+    <Compile Remove="Models\ControleEmprestimoLivroContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <_ContentIncludedByDefault Remove="efpt.config.json" />
   </ItemGroup>
 

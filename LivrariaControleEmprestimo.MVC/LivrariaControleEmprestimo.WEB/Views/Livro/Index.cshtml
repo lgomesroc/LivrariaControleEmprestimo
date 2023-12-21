@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<LivrariaControleEmprestimo.DATA.Models.Livro>
 
-h1>Livros</h1>
+<h1>Livros</h1>
 <p>
     <a class="btn btn-primary" asp-action="Create"> <i class="fa fa-plus-circle"></i> Novo Livro</a>
 </p>
@@ -8,19 +8,19 @@ h1>Livros</h1>
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.livroNome)
+                @Html.DisplayNameFor(model => model.LivroNome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.livroAutor)
+                @Html.DisplayNameFor(model => model.LivroAutor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.livroEditora)
+                @Html.DisplayNameFor(model => model.LivroEditora)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.livroAnoPublicacao)
+                @Html.DisplayNameFor(model => model.LivroAnoPublicacao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.livroEdicao)
+                @Html.DisplayNameFor(model => model.LivroEdicao)
             </th>
             <th></th>
         </tr>
@@ -30,32 +30,32 @@ h1>Livros</h1>
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.livroNome)
+                    @Html.DisplayFor(modelItem => item.LivroNome)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.livroAutor)
+                    @Html.DisplayFor(modelItem => item.LivroAutor)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.livroEditora)
+                    @Html.DisplayFor(modelItem => item.LivroEditora)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.livroAnoPublicacao.Year)
+                    @Html.DisplayFor(modelItem => item.LivroAnoPublicacao.Year)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.livroEdicao)
+                    @Html.DisplayFor(modelItem => item.LivroEdicao)
                 </td>
                 <td class="row">
-                    <a asp-action="Edit" class="btn btn-primary mr-1" asp-route-id="@item.id"><i class="fa fa-edit"></i></a>
-                    <a asp-action="Details" class="btn btn-success mr-1" asp-route-id="@item.id"><i class="fa fa-search"></i></a>
+                    <a asp-action="Edit" class="btn btn-primary mr-1" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                    <a asp-action="Details" class="btn btn-success mr-1" asp-route-id="@item.Id"><i class="fa fa-search"></i></a>
 
 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-danger mr-1" data-toggle="modal" data-target="#DeleteModal-@item.id">
+                    <button type="button" class="btn btn-danger mr-1" data-toggle="modal" data-target="#DeleteModal-@item.Id">
                         <i class="fa fa-trash"></i>
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="DeleteModal-@item.id" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="DeleteModal-@item.Id" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -65,11 +65,11 @@ h1>Livros</h1>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Deseja realmente excluir o livro @item.livroNome ?
+                                    Deseja realmente excluir o livro @item.LivroNome ?
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-                                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.id">Sim</a>
+                                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Sim</a>
                                 </div>
                             </div>
                         </div>

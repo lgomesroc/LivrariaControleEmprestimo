@@ -39,7 +39,7 @@ namespace LivrariaControleEmprestimo.WEB.Controllers
         public IActionResult Edit(int id)
         {
             Livro oLivro = oLivroService.oRepositoryLivro.SelecionarPK(id);
-            ViewBag.anoPublicacao = oLivro.livroAnoPublicacao.Year;
+            ViewBag.anoPublicacao = oLivro.LivroAnoPublicacao.Year;
             return View(oLivro);
         
         }
@@ -60,7 +60,7 @@ namespace LivrariaControleEmprestimo.WEB.Controllers
         public IActionResult Details(int id)
         {
             Livro oLivro = oLivroService.oRepositoryLivro.SelecionarPK(id);
-            ViewBag.anoPublicacao = oLivro.livroAnoPublicacao.Year;
+            ViewBag.anoPublicacao = oLivro.LivroAnoPublicacao.Year;
             return View(oLivro);
             
         }
